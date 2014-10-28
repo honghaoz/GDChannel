@@ -1,0 +1,17 @@
+# Uncomment this line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "7.0"
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+target "DogSync" do
+
+pod 'AFNetworking' #, '~> 2.4'
+
+end
+
+target "DogSyncTests" do
+
+end
+
