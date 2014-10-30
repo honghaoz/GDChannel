@@ -1,17 +1,19 @@
 # Uncomment this line to define a global platform for your project
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, "7.0"
+# platform :ios, '6.0'
 
-# ignore all warnings from all pods
+source 'https://github.com/CocoaPods/Specs.git'
+
 inhibit_all_warnings!
 
-target "DogSync" do
+target 'Demo' do
 
-pod 'AFNetworking' #, '~> 2.4'
+pod 'J2ObjC', :git => 'https://github.com/goodow/j2objc.git', :tag => 'v0.9.3-lib'
+pod 'GDJson', :git => 'https://github.com/goodow/GDJson.git'
+
+pod 'GDChannel', :path => '..'
 
 end
 
-target "DogSyncTests" do
+target 'DemoTests' do
 
 end
-

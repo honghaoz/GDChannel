@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GDChannel.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    id<GDCBus> bus = [[GDCSimpleBus alloc] init];
+    
+    
+    
     return YES;
 }
 
