@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "GDChannel.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    id<GDCBus> bus = [[GDCSimpleBus alloc] init];
-    
-    
-    
     return YES;
 }
 
